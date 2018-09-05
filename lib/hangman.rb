@@ -119,7 +119,6 @@ Enter one of the following options:
 		current_game_screen == @game_screen ? update_screen(1) : update_screen(0)
 	end
 
-
 	def update_screen(result)
 		@failed_attemps += result
 
