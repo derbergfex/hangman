@@ -38,7 +38,7 @@ class Hangman
 	private 
 	
 	def generate_secret_word
-		words = File.readlines("5desk.txt").select { |word| word.length.between?(5, 12) }
+		words = File.readlines("5desk.txt").select {|word| word.length.between?(5, 12)}
     words[rand(words.length)].strip
 	end
 
@@ -50,16 +50,15 @@ class Hangman
 		}.to_json
 		puts "Type the name for your saved game."
 		saved_game_name = gets.chomp
-		File.open("saved_games/#{saved_game_name}.json", "w") { |file| file.write(saved_json_object) }
+		File.open("saved_games/#{saved_game_name}.json", "w") {|file| file.write(saved_json_object)}
 		puts "Game saved successfully as #{saved_game_name}"
 	end
 
 	def load_game(saved_game)
 		saved_file = File.read(saved_game)
-		
 		saved_file_hash = JSON.parse(saved_file)
-    @secret_word = saved_file_hash["secret_word"]
-    @game_screen = saved_file_hash["game_screen"]
+		@secret_word = saved_file_hash["secret_word"]
+		@game_screen = saved_file_hash["game_screen"]
 		@failed_attemps = saved_file_hash["failed_attemps"]
 		start_game
 	end
@@ -111,7 +110,7 @@ Enter one of the following options:
 
 		if input.length == 1
 			@game_screen.length.times do |index|
-				@game_screen[index] = input if @secret_word[index].downcase == input
+			@game_screen[index] = input if @secret_word[index].downcase == input
 			end
 		else
 			@game_screen = input if @secret_word.downcase == input
@@ -188,7 +187,6 @@ Enter one of the following options:
 		end
 			puts ""	
 	end
-
 end
 
 my_game = Hangman.new
