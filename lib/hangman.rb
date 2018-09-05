@@ -188,5 +188,6 @@ Enter one of the following options:
 	end
 end
 
+
 my_game = Hangman.new
 my_game.init_game
