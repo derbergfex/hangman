@@ -8,3 +8,4 @@ You'll then be presented with the main game menu: you have the choice to either 
 
 ## Acknowledgments
 This game was created as part of the Odin Project.
+The dictionary used for this game, 5desk.txt, is from http://scrapmaker.com/.
