@@ -7,5 +7,5 @@ Use the `cd <the directory to move to>` command to navigate to the space you hav
 You'll then be presented with the main game menu: you have the choice to either start a new game or load a saved game.
 
 ## Acknowledgments
-This game was created as part of the Odin Project.
-The dictionary used for this game, 5desk.txt, is from http://scrapmaker.com/.
++ This game was created as part of the Odin Project.
++ The dictionary used for this game, 5desk.txt, is from http://scrapmaker.com/.
